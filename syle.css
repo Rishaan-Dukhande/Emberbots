@@ -1,4 +1,4 @@
-<style>
+
     :root {
       --bg: #0d0a14;
       --bg2: #13101e;
@@ -461,4 +461,3 @@
       .form-row { grid-template-columns: 1fr; }
       .robot-section { padding: 70px 24px; }
     }
-  </style>
