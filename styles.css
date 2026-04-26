@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'Main';
-    src: url('../fonts/capsmallclean.ttf');
+    src: url('fonts/capsmallclean.ttf');
     font-weight: normal;
     font-style: normal;
 }
