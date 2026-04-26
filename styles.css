@@ -69,10 +69,8 @@ main {
 }
 
 .glow {
-    position: absolute;
-    top: 30%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw; height: 100vh;
+    position: fixed;
+    inset: 0;
     background: radial-gradient(circle, rgba(124,58,237,0.3) 0%, transparent 70%);
     pointer-events: none;
 }
@@ -90,6 +88,7 @@ main {
     cursor: pointer;
     box-shadow: 0 0 1.5rem var(--color-aura);
     transition: 0.2s ease-in-out;
+    margin-bottom: 2rem;
 }
 
 .learn:hover {
@@ -139,6 +138,10 @@ footer {
     z-index: 75;
 }
 
+footer > a {
+    color: var(--color-light);
+}
+
 a {
     text-decoration: none;
 }
@@ -157,11 +160,21 @@ img {
     margin-top: 2rem;
 }
 
-.about, .mentors, .outreaches {
+.about, .mentors, .outreaches, .seasons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
+.seasons {
+    gap: 4rem;
+}
+
+.season {
+    height: 15vw;
+}
+
+
 
 .students {
     display: grid;
@@ -238,7 +251,7 @@ img {
     border-radius: 1rem;
 }
 
-.outreach {
+.outreach,  .season_card {
     width: 24rem;
     height: 24rem;
     padding: 0 1rem;
@@ -258,6 +271,13 @@ img {
 
 .centered {
     text-align: center;
+}
+
+@media (min-width: 1500px) {
+    .season_card {
+        height: 30rem;
+        width: 42rem;
+    }
 }
 
 @media (max-width: 1119px) {
