@@ -123,6 +123,12 @@ nav {
     gap: 5vw;
 }
 
+.nav_section > a {
+    background: var(--color-background);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.75rem;
+}
+
 footer {
     position: fixed;
     bottom: 0;
