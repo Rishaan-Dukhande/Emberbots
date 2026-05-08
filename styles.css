@@ -158,8 +158,11 @@ img {
 
 .team, .robot {
     max-width: 35vw;
-    max-height: 35vw;
     border-radius: 1rem;
+}
+
+.robot {
+    max-height: 35vw;
 }
 
 .code {
