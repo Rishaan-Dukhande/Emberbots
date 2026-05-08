@@ -40,7 +40,18 @@
             9 wheel intake
           </article>
         </div>
-        <img class="robot" src="../images/robot.png" alt="robot" />
+        <model-viewer
+          class="robot"
+          src="../models/Robot.glb"
+          alt="robot"
+          auto-rotate
+          camera-controls
+          shadow-intensity="0.3"
+          exposure="0.5"
+          interaction-prompt="none"
+          disable-pan
+          camera-orbit="135deg 75deg 1.5m"
+        ></model-viewer>
       </section>
       <section class="about">
         <div class="robot_features">
@@ -68,5 +79,9 @@
     </main>
     <footer>© 2026 Emberbots. All rights reserved.</footer>
     <div class="glow"></div>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"
+    ></script>
   </body>
 </html>

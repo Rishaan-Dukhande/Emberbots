@@ -158,6 +158,7 @@ img {
 
 .team, .robot {
     max-width: 35vw;
+    max-height: 35vw;
     border-radius: 1rem;
 }
 
@@ -277,6 +278,11 @@ img {
 
 .centered {
     text-align: center;
+}
+
+model-viewer {
+    width: 500px;
+    height: 500px;
 }
 
 @media (min-width: 1500px) {
