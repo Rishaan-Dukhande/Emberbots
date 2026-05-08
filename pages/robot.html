@@ -42,9 +42,9 @@
         </div>
         <model-viewer
           class="robot"
+          id="robot"
           src="../models/Robot.glb"
           alt="robot"
-          poster="../images/robot.png"
           auto-rotate
           camera-controls
           shadow-intensity="0.3"
@@ -84,5 +84,14 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"
     ></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const robot = document.getElementById("robot");
+        if (!robot) return;
+        setTimeout(() => {
+          robot.poster = "../images/robot.png";
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
