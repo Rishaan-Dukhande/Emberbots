@@ -181,7 +181,8 @@ img {
 }
 
 .season {
-    height: 15vw;
+    height: 12rem;
+    border-radius: 0.5rem;
 }
 
 
@@ -279,6 +280,10 @@ img {
     }
 }
 
+.season_card {
+    height: 20rem;
+}
+
 .centered {
     text-align: center;
 }
@@ -298,6 +303,12 @@ model-viewer {
 @media (max-width: 1119px) {
     main {
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 959px) {
+    .seasons {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -358,10 +369,20 @@ model-viewer {
         width: 10rem;
         font-size: 1rem;
     }
-    .outreach {
+    .season_card, .outreach {
         width: 24rem;
     }
     h1 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 379px) {
+    .nav_section {
+        gap: 4vw;
+    }
+    .nav_section > a {
+        padding: 0.1rem 0.2rem;
+        border-radius: 0.5rem;
     }
 }
